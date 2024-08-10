@@ -71,7 +71,7 @@
       "$inputSuggestions": [],
       "$defaultOutput": { "stateId": "onboarding", "$invalid": false },
       "id": "fallback",
-      "$position": { "top": "63px", "left": "1324px" },
+      "$position": { "top": "69.25px", "left": "1457px" },
       "$title": "Exceções",
       "$invalidContentActions": false,
       "$invalidOutputs": false,
@@ -324,29 +324,6 @@
         },
         {
           "action": {
-            "$id": "7b01651b-af71-4ddc-8342-d4927ef79d45",
-            "$typeOfContent": "chat-state",
-            "type": "SendMessage",
-            "settings": {
-              "id": "b402fab9-0789-4fb3-b7d7-0318dc452b0e",
-              "type": "application/vnd.lime.chatstate+json",
-              "content": { "state": "composing", "interval": 1000 }
-            },
-            "$cardContent": {
-              "document": {
-                "id": "b402fab9-0789-4fb3-b7d7-0318dc452b0e",
-                "type": "application/vnd.lime.chatstate+json",
-                "content": { "state": "composing", "interval": 1000 }
-              },
-              "editable": true,
-              "deletable": true,
-              "position": "left"
-            }
-          },
-          "$invalid": false
-        },
-        {
-          "action": {
             "$id": "bcd3eff0-4e0f-405e-842d-7e5b629336c3",
             "$typeOfContent": "document-select",
             "type": "SendMessage",
@@ -373,10 +350,7 @@
                           "type": "text/plain",
                           "value": "💙Saber mais"
                         },
-                        "value": {
-                          "type": "text/plain",
-                          "value": "0b131065-b076-4bc6-a347-af48017948c8"
-                        }
+                        "value": { "type": "text/plain", "value": "Take.Be" }
                       }
                     ],
                     "id": 0,
@@ -399,10 +373,7 @@
                           "type": "text/plain",
                           "value": "🏳️Saber mais"
                         },
-                        "value": {
-                          "type": "text/plain",
-                          "value": "0b131065-b076-4bc6-a347-af48017948c8"
-                        }
+                        "value": null
                       }
                     ],
                     "id": 1,
@@ -551,10 +522,7 @@
                             "type": "text/plain",
                             "value": "💙Saber mais"
                           },
-                          "value": {
-                            "type": "text/plain",
-                            "value": "0b131065-b076-4bc6-a347-af48017948c8"
-                          }
+                          "value": { "type": "text/plain", "value": "Take.Be" }
                         }
                       ],
                       "id": 0,
@@ -577,10 +545,7 @@
                             "type": "text/plain",
                             "value": "🏳️Saber mais"
                           },
-                          "value": {
-                            "type": "text/plain",
-                            "value": "0b131065-b076-4bc6-a347-af48017948c8"
-                          }
+                          "value": null
                         }
                       ],
                       "id": 1,
@@ -729,69 +694,126 @@
             "$invalid": false
           },
           "$invalid": false
+        }
+      ],
+      "$conditionOutputs": [
+        {
+          "stateId": "dc645f8b-2204-438d-a99d-ad563964e3b1",
+          "typeOfStateId": "state",
+          "$connId": "con_13",
+          "$id": "21904bfe-61fb-4c86-b880-78f882617a18",
+          "conditions": [
+            { "source": "input", "comparison": "equals", "values": ["Take.Be"] }
+          ],
+          "$invalid": false
         },
         {
-          "action": {
-            "$id": "a862d16b-6f85-4f53-9283-592dc016a5c1",
-            "$typeOfContent": "chat-state",
-            "type": "SendMessage",
-            "settings": {
-              "id": "c88c4af2-fced-474d-9195-cab70253c172",
-              "type": "application/vnd.lime.chatstate+json",
-              "content": { "state": "composing", "interval": 1000 },
-              "metadata": {
-                "#stateName": "{{state.name}}",
-                "#stateId": "{{state.id}}",
-                "#messageId": "{{input.message@id}}",
-                "#previousStateId": "{{state.previous.id}}",
-                "#previousStateName": "{{state.previous.name}}"
-              }
-            },
-            "$cardContent": {
-              "document": {
-                "id": "c88c4af2-fced-474d-9195-cab70253c172",
-                "type": "application/vnd.lime.chatstate+json",
-                "content": { "state": "composing", "interval": 1000 }
-              },
-              "editable": true,
-              "deletable": true,
-              "position": "left"
+          "stateId": "0b131065-b076-4bc6-a347-af48017948c8",
+          "typeOfStateId": "state",
+          "$connId": "con_18",
+          "$id": "0fc6d45f-229e-4ce1-8a0d-d1f9135dd5d9",
+          "conditions": [
+            {
+              "source": "input",
+              "comparison": "equals",
+              "values": ["🏳️Saber mais"]
             }
-          },
+          ],
+          "$invalid": false
+        },
+        {
+          "stateId": "78f402fb-8f90-4f87-873f-7d42f17b5d26",
+          "typeOfStateId": "state",
+          "$connId": "con_23",
+          "$id": "638218b7-ea55-4083-a388-816408521227",
+          "conditions": [
+            {
+              "source": "input",
+              "comparison": "equals",
+              "values": ["⭐Saber mais"]
+            }
+          ],
+          "$invalid": false
+        },
+        {
+          "stateId": "e84f4066-293b-4abb-b27f-67f04202cb24",
+          "typeOfStateId": "state",
+          "$connId": "con_28",
+          "$id": "59ed7a08-18a1-46ad-8cb1-d60180e49fea",
+          "conditions": [
+            {
+              "source": "input",
+              "comparison": "equals",
+              "values": ["⚡Saber mais"]
+            }
+          ],
+          "$invalid": false
+        },
+        {
+          "stateId": "5054e7ba-2359-471d-9971-6380e2c133b4",
+          "typeOfStateId": "state",
+          "$connId": "con_33",
+          "$id": "7b76b0c6-6e5e-47f7-8cf8-b51bbf0ca161",
+          "conditions": [
+            {
+              "source": "input",
+              "comparison": "equals",
+              "values": ["🎯 Saber mais"]
+            }
+          ],
+          "$invalid": false
+        },
+        {
+          "stateId": "3a668d65-23a6-4d2b-a618-052871998e05",
+          "typeOfStateId": "state",
+          "$connId": "con_38",
+          "$id": "fc7a599b-c1d6-4740-89d6-5e8d1fba7708",
+          "conditions": [
+            {
+              "source": "input",
+              "comparison": "equals",
+              "values": ["🚀 Saber mais"]
+            }
+          ],
+          "$invalid": false
+        },
+        {
+          "stateId": "eeceafe6-6025-4091-b8f1-0c9575a79c11",
+          "typeOfStateId": "state",
+          "$connId": "con_43",
+          "$id": "8a3a251b-d66d-4bb2-b26b-46fb0b4cac46",
+          "conditions": [
+            {
+              "source": "input",
+              "comparison": "equals",
+              "values": ["💡 Fazer desafio"]
+            }
+          ],
           "$invalid": false
         }
       ],
-      "$conditionOutputs": [],
-      "$enteringCustomActions": [
-        {
-          "$id": "bc474760-1234-463c-a4cf-da8b6989324d",
-          "$typeOfContent": "",
-          "type": "SetVariable",
-          "$title": "Definir variável",
-          "$invalid": false,
-          "settings": {
-            "value": "dc645f8b-2204-438d-a99d-ad563964e3b1",
-            "variable": "idTakeBe"
-          },
-          "conditions": []
-        }
-      ],
+      "$enteringCustomActions": [],
       "$leavingCustomActions": [],
       "$inputSuggestions": [
-        "0b131065-b076-4bc6-a347-af48017948c8",
+        "Take.Be",
+        "🏳️Saber mais",
         "⭐Saber mais",
         "⚡Saber mais",
         "🎯 Saber mais",
         "🚀 Saber mais",
         "💡 Fazer desafio"
       ],
-      "$defaultOutput": { "stateId": "fallback", "$invalid": false },
+      "$defaultOutput": {
+        "stateId": "fallback",
+        "$invalid": false,
+        "typeOfStateId": "state"
+      },
       "isAiGenerated": false,
       "$tags": [],
       "id": "63f418b4-909c-4654-bc34-d5777dbf5fdf",
       "root": false,
       "$title": "2.0 - Mostrar Culturas",
-      "$position": { "top": "333px", "left": "663px" },
+      "$position": { "top": "315px", "left": "661.611px" },
       "$invalidContentActions": false,
       "$invalidOutputs": false,
       "$invalidCustomActions": false,
@@ -917,7 +939,7 @@
         {
           "stateId": "108e22d6-813c-4b2e-aa79-6943c543f61f",
           "typeOfStateId": "state",
-          "$connId": "con_13",
+          "$connId": "con_48",
           "$id": "d9c0e4a0-a23a-4e8b-baa7-458c8dd079b8",
           "conditions": [
             { "source": "input", "comparison": "exists", "values": [] }
@@ -925,17 +947,7 @@
           "$invalid": false
         }
       ],
-      "$enteringCustomActions": [
-        {
-          "$id": "c055dc8e-fe37-4f7f-9f0f-66ef7358f097",
-          "$typeOfContent": "",
-          "type": "SetVariable",
-          "$title": "Definir variável",
-          "$invalid": false,
-          "settings": { "variable": "idTakeBe", "value": "Take.Be" },
-          "conditions": []
-        }
-      ],
+      "$enteringCustomActions": [],
       "$leavingCustomActions": [],
       "$inputSuggestions": [],
       "$defaultOutput": { "stateId": "fallback", "$invalid": false },
@@ -944,12 +956,11 @@
       "id": "dc645f8b-2204-438d-a99d-ad563964e3b1",
       "root": false,
       "$title": "Take.Be",
-      "$position": { "top": "450px", "left": "254px" },
+      "$position": { "top": "450px", "left": "242.75px" },
       "$invalidContentActions": false,
       "$invalidOutputs": false,
       "$invalidCustomActions": false,
-      "$invalid": false,
-      "$validationError": {}
+      "$invalid": false
     },
     "0b131065-b076-4bc6-a347-af48017948c8": {
       "$contentActions": [
@@ -980,7 +991,14 @@
             "settings": {
               "id": "a94fb140-a874-40b4-8549-05ac1c520b26",
               "type": "application/vnd.lime.chatstate+json",
-              "content": { "state": "composing", "interval": 1000 }
+              "content": { "state": "composing", "interval": 1000 },
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
@@ -1004,7 +1022,13 @@
               "id": "77a82a8b-a2d0-4dfd-9309-b9b7f1d81083",
               "type": "text/plain",
               "content": "Sabemos que o que faz uma equipe incrível são pessoas incríveis em cooperação. Assim, cada Take.ser busca cumprir sua parte para garantir a vitória do time.",
-              "metadata": {}
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
@@ -1024,7 +1048,7 @@
         {
           "stateId": "108e22d6-813c-4b2e-aa79-6943c543f61f",
           "typeOfStateId": "state",
-          "$connId": "con_18",
+          "$connId": "con_53",
           "$id": "0b274407-592e-4bf4-a562-5b478fb80de2",
           "conditions": [
             { "source": "input", "comparison": "exists", "values": [] }
@@ -1076,7 +1100,14 @@
             "settings": {
               "id": "ed223c4a-1f2b-44fd-8d81-ddd36b62a266",
               "type": "application/vnd.lime.chatstate+json",
-              "content": { "state": "composing", "interval": 1000 }
+              "content": { "state": "composing", "interval": 1000 },
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
@@ -1100,7 +1131,13 @@
               "id": "5b7991a3-0bcc-45a9-a0eb-2ae6d20d58d6",
               "type": "text/plain",
               "content": "Com nosso espírito geek e nossa disposição para aprender e crescer, buscamos estar sempre um passo à frente e superarmos os mais exigentes padrões.",
-              "metadata": {}
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
@@ -1120,11 +1157,12 @@
         {
           "stateId": "108e22d6-813c-4b2e-aa79-6943c543f61f",
           "typeOfStateId": "state",
-          "$connId": "con_23",
+          "$connId": "con_58",
           "$id": "a248e028-c836-4ac3-9508-cb5726ad1644",
           "conditions": [
             { "source": "input", "comparison": "exists", "values": [] }
-          ]
+          ],
+          "$invalid": false
         }
       ],
       "$enteringCustomActions": [],
@@ -1136,7 +1174,7 @@
       "id": "78f402fb-8f90-4f87-873f-7d42f17b5d26",
       "root": false,
       "$title": "Take.Execellence",
-      "$position": { "top": "474px", "left": "553px" },
+      "$position": { "top": "558.25px", "left": "558.5px" },
       "$invalidContentActions": false,
       "$invalidOutputs": false,
       "$invalidCustomActions": false,
@@ -1171,7 +1209,14 @@
             "settings": {
               "id": "17f6e7ee-d721-493c-8186-3b94e4cf8c3d",
               "type": "application/vnd.lime.chatstate+json",
-              "content": { "state": "composing", "interval": 1000 }
+              "content": { "state": "composing", "interval": 1000 },
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
@@ -1195,7 +1240,13 @@
               "id": "d8f25a51-7636-451b-9158-665255b2ba39",
               "type": "text/plain",
               "content": "Apostamos em profissionais que chamam a responsabilidade para si e que, sem medo de ousar, transformem o mundo à sua volta, com muita competência e criatividade!",
-              "metadata": {}
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
@@ -1215,11 +1266,12 @@
         {
           "stateId": "108e22d6-813c-4b2e-aa79-6943c543f61f",
           "typeOfStateId": "state",
-          "$connId": "con_28",
+          "$connId": "con_63",
           "$id": "2490bc44-8042-4845-bbfa-5f05d0bad779",
           "conditions": [
             { "source": "input", "comparison": "exists", "values": [] }
-          ]
+          ],
+          "$invalid": false
         }
       ],
       "$enteringCustomActions": [],
@@ -1231,7 +1283,7 @@
       "id": "e84f4066-293b-4abb-b27f-67f04202cb24",
       "root": false,
       "$title": "Take.Charge",
-      "$position": { "top": "476px", "left": "752px" },
+      "$position": { "top": "544px", "left": "802px" },
       "$invalidContentActions": false,
       "$invalidOutputs": false,
       "$invalidCustomActions": false,
@@ -1263,11 +1315,12 @@
         {
           "stateId": "108e22d6-813c-4b2e-aa79-6943c543f61f",
           "typeOfStateId": "state",
-          "$connId": "con_33",
+          "$connId": "con_68",
           "$id": "b7bf786b-cb44-4f5f-8467-2b60e5d04a42",
           "conditions": [
             { "source": "input", "comparison": "exists", "values": [] }
-          ]
+          ],
+          "$invalid": false
         }
       ],
       "$enteringCustomActions": [],
@@ -1279,7 +1332,7 @@
       "id": "5054e7ba-2359-471d-9971-6380e2c133b4",
       "root": false,
       "$title": "Take.Simple",
-      "$position": { "top": "435px", "left": "1060px" },
+      "$position": { "top": "435px", "left": "1133.75px" },
       "$invalidContentActions": false,
       "$invalidOutputs": false,
       "$invalidCustomActions": false,
@@ -1314,7 +1367,14 @@
             "settings": {
               "id": "d0873754-9618-4ebc-998e-daf0230ab15c",
               "type": "application/vnd.lime.chatstate+json",
-              "content": { "state": "composing", "interval": 1000 }
+              "content": { "state": "composing", "interval": 1000 },
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
@@ -1338,7 +1398,13 @@
               "id": "63708991-f8ea-48b7-93d9-bb6fd76f2046",
               "type": "text/plain",
               "content": "Não temos medo de sonhar grande, pois sabemos que temos talento e determinação para realizar coisas incríveis!",
-              "metadata": {}
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
@@ -1358,7 +1424,7 @@
         {
           "stateId": "108e22d6-813c-4b2e-aa79-6943c543f61f",
           "typeOfStateId": "state",
-          "$connId": "con_38",
+          "$connId": "con_73",
           "$id": "2130386a-7abe-4279-9944-898fca6e9911",
           "conditions": [
             { "source": "input", "comparison": "exists", "values": [] }
@@ -1368,11 +1434,12 @@
         {
           "stateId": "108e22d6-813c-4b2e-aa79-6943c543f61f",
           "typeOfStateId": "state",
-          "$connId": "con_43",
+          "$connId": "con_78",
           "$id": "a1326849-06e9-49b9-ac3f-d43e97fe8840",
           "conditions": [
             { "source": "input", "comparison": "exists", "values": [] }
-          ]
+          ],
+          "$invalid": false
         }
       ],
       "$enteringCustomActions": [],
@@ -1413,43 +1480,133 @@
         },
         {
           "action": {
-            "$id": "af499299-7b18-4a37-850f-3f0633e66398",
-            "$typeOfContent": "chat-state",
+            "$id": "23322e23-5012-4003-a97f-875faf8f4330",
+            "$typeOfContent": "select",
             "type": "SendMessage",
             "settings": {
-              "id": "e6b1b629-2988-42d0-a287-73601ef8247f",
-              "type": "application/vnd.lime.chatstate+json",
-              "content": { "state": "composing", "interval": 1000 }
-            },
-            "$cardContent": {
-              "document": {
-                "id": "e6b1b629-2988-42d0-a287-73601ef8247f",
-                "type": "application/vnd.lime.chatstate+json",
-                "content": { "state": "composing", "interval": 1000 }
+              "id": "411e0e3a-d72f-4bd9-b915-c0b5fff0cf8a",
+              "type": "application/vnd.lime.select+json",
+              "content": {
+                "text": "Se quiser mais sobre outros valores é só falar",
+                "options": [
+                  {
+                    "text": "💙Be",
+                    "previewText": "💙Be",
+                    "value": null,
+                    "index": 0,
+                    "type": null
+                  },
+                  {
+                    "index": -1,
+                    "text": "🏳️Team",
+                    "previewText": "🏳️Team",
+                    "type": null,
+                    "value": null
+                  },
+                  {
+                    "index": -1,
+                    "text": "⭐ Excellence",
+                    "previewText": "⭐ Excellence",
+                    "type": null,
+                    "value": null
+                  },
+                  {
+                    "index": -1,
+                    "text": "⚡Charge",
+                    "previewText": "⚡Charge",
+                    "type": null,
+                    "value": null
+                  },
+                  {
+                    "index": -1,
+                    "text": "🎯 Simple",
+                    "previewText": "🎯 Simple",
+                    "type": null,
+                    "value": null
+                  },
+                  {
+                    "index": -1,
+                    "text": "🚀Higher",
+                    "previewText": "🚀Higher",
+                    "type": null,
+                    "value": null
+                  },
+                  {
+                    "index": -1,
+                    "text": "💡Desafio",
+                    "previewText": "💡Desafio",
+                    "type": null,
+                    "value": null
+                  }
+                ]
               },
-              "editable": true,
-              "deletable": true,
-              "position": "left"
-            }
-          },
-          "$invalid": false
-        },
-        {
-          "action": {
-            "$id": "07051ff9-ed8a-4197-8ec3-ff2009bb5057",
-            "$typeOfContent": "text",
-            "type": "SendMessage",
-            "settings": {
-              "id": "999e1763-0015-4fb5-b625-0e889c050b4a",
-              "type": "text/plain",
-              "content": "Se quiser saber mais sobre outros valores é só falar",
-              "metadata": {}
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
-                "id": "999e1763-0015-4fb5-b625-0e889c050b4a",
-                "type": "text/plain",
-                "content": "Se quiser saber mais sobre outros valores é só falar"
+                "id": "411e0e3a-d72f-4bd9-b915-c0b5fff0cf8a",
+                "type": "application/vnd.lime.select+json",
+                "content": {
+                  "text": "Se quiser saber mais sobre outros valores é só falar",
+                  "options": [
+                    {
+                      "index": -1,
+                      "text": "💙Be",
+                      "previewText": "💙Be",
+                      "type": null,
+                      "value": null
+                    },
+                    {
+                      "index": -1,
+                      "text": "🏳️Team",
+                      "previewText": "🏳️Team",
+                      "type": null,
+                      "value": null
+                    },
+                    {
+                      "index": -1,
+                      "text": "⭐ Excellence",
+                      "previewText": "⭐ Excellence",
+                      "type": null,
+                      "value": null
+                    },
+                    {
+                      "index": -1,
+                      "text": "⚡Change",
+                      "previewText": "⚡Change",
+                      "type": null,
+                      "value": null
+                    },
+                    {
+                      "index": -1,
+                      "text": "🎯 Simple",
+                      "previewText": "🎯 Simple",
+                      "type": null,
+                      "value": null
+                    },
+                    {
+                      "index": -1,
+                      "text": "🚀 Higher",
+                      "previewText": "🚀 Higher",
+                      "type": null,
+                      "value": null
+                    },
+                    {
+                      "index": -1,
+                      "text": "💡Desafio",
+                      "previewText": "💡Desafio",
+                      "type": null,
+                      "value": null
+                    }
+                  ],
+                  "limitMenu": false
+                }
               },
               "editable": true,
               "deletable": true,
@@ -1459,17 +1616,123 @@
           "$invalid": false
         }
       ],
-      "$conditionOutputs": [],
+      "$conditionOutputs": [
+        {
+          "stateId": "dc645f8b-2204-438d-a99d-ad563964e3b1",
+          "typeOfStateId": "state",
+          "$connId": "con_83",
+          "$contentId": "23322e23-5012-4003-a97f-875faf8f4330",
+          "$id": "072d2a4b-6b56-4b1a-b709-eab028ea524a",
+          "conditions": [
+            { "source": "input", "comparison": "equals", "values": ["💙Be"] }
+          ],
+          "$invalid": false
+        },
+        {
+          "stateId": "0b131065-b076-4bc6-a347-af48017948c8",
+          "typeOfStateId": "state",
+          "$connId": "con_88",
+          "$contentId": "23322e23-5012-4003-a97f-875faf8f4330",
+          "$id": "0da4e90a-6a8c-4348-af22-c201231df4a8",
+          "conditions": [
+            { "source": "input", "comparison": "equals", "values": ["🏳️Team"] }
+          ],
+          "$invalid": false
+        },
+        {
+          "stateId": "78f402fb-8f90-4f87-873f-7d42f17b5d26",
+          "typeOfStateId": "state",
+          "$connId": "con_93",
+          "$contentId": "23322e23-5012-4003-a97f-875faf8f4330",
+          "$id": "ea233bbc-413d-44ba-a6cf-3ae03ff74a24",
+          "conditions": [
+            {
+              "source": "input",
+              "comparison": "equals",
+              "values": ["⭐ Excellence"]
+            }
+          ],
+          "$invalid": false
+        },
+        {
+          "stateId": "e84f4066-293b-4abb-b27f-67f04202cb24",
+          "typeOfStateId": "state",
+          "$connId": "con_98",
+          "$contentId": "23322e23-5012-4003-a97f-875faf8f4330",
+          "$id": "0ab5ea60-106a-452d-a529-401ce40894d1",
+          "conditions": [
+            {
+              "source": "input",
+              "comparison": "equals",
+              "values": ["⚡Change"]
+            }
+          ],
+          "$invalid": false
+        },
+        {
+          "stateId": "5054e7ba-2359-471d-9971-6380e2c133b4",
+          "typeOfStateId": "state",
+          "$connId": "con_103",
+          "$contentId": "23322e23-5012-4003-a97f-875faf8f4330",
+          "$id": "dcd33a20-fcc4-4d9b-83c7-930e07deba4d",
+          "conditions": [
+            {
+              "source": "input",
+              "comparison": "equals",
+              "values": ["🎯 Simple"]
+            }
+          ],
+          "$invalid": false
+        },
+        {
+          "stateId": "3a668d65-23a6-4d2b-a618-052871998e05",
+          "typeOfStateId": "state",
+          "$connId": "con_108",
+          "$contentId": "23322e23-5012-4003-a97f-875faf8f4330",
+          "$id": "14292567-4ca8-4814-aded-8f1599410c3d",
+          "conditions": [
+            {
+              "source": "input",
+              "comparison": "equals",
+              "values": ["🚀 Higher"]
+            }
+          ],
+          "$invalid": false
+        },
+        {
+          "stateId": "eeceafe6-6025-4091-b8f1-0c9575a79c11",
+          "typeOfStateId": "state",
+          "$connId": "con_113",
+          "$contentId": "23322e23-5012-4003-a97f-875faf8f4330",
+          "$id": "38226073-ab0b-4d37-a962-5b7e0bf4ef39",
+          "conditions": [
+            {
+              "source": "input",
+              "comparison": "equals",
+              "values": ["💡Desafio"]
+            }
+          ],
+          "$invalid": false
+        }
+      ],
       "$enteringCustomActions": [],
       "$leavingCustomActions": [],
-      "$inputSuggestions": [],
+      "$inputSuggestions": [
+        "💙Be",
+        "🏳️Team",
+        "⭐ Excellence",
+        "⚡Change",
+        "🎯 Simple",
+        "🚀 Higher",
+        "💡Desafio"
+      ],
       "$defaultOutput": { "stateId": "fallback", "$invalid": false },
       "isAiGenerated": false,
       "$tags": [],
       "id": "108e22d6-813c-4b2e-aa79-6943c543f61f",
       "root": false,
       "$title": "Finish",
-      "$position": { "top": "938px", "left": "649px" },
+      "$position": { "top": "938px", "left": "672.75px" },
       "$invalidContentActions": false,
       "$invalidOutputs": false,
       "$invalidCustomActions": false,
@@ -1504,7 +1767,14 @@
             "settings": {
               "id": "78c7444f-38f8-435e-a3b9-47d2ba06c616",
               "type": "application/vnd.lime.chatstate+json",
-              "content": { "state": "composing", "interval": 1000 }
+              "content": { "state": "composing", "interval": 1000 },
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
@@ -1528,7 +1798,13 @@
               "id": "b6728316-4495-449e-ae6e-5848c9c5551d",
               "type": "text/plain",
               "content": "Conforme solicitado no e-mail enviado, o resultado do desafio está disponível abaixo...",
-              "metadata": {}
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
@@ -1551,7 +1827,14 @@
             "settings": {
               "id": "7339ff15-d576-4b03-8029-6c044fe39c68",
               "type": "application/vnd.lime.chatstate+json",
-              "content": { "state": "composing", "interval": 1000 }
+              "content": { "state": "composing", "interval": 1000 },
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
+              }
             },
             "$cardContent": {
               "document": {
@@ -1628,6 +1911,13 @@
                     ]
                   }
                 ]
+              },
+              "metadata": {
+                "#stateName": "{{state.name}}",
+                "#stateId": "{{state.id}}",
+                "#messageId": "{{input.message@id}}",
+                "#previousStateId": "{{state.previous.id}}",
+                "#previousStateName": "{{state.previous.name}}"
               }
             },
             "$cardContent": {
@@ -1702,7 +1992,7 @@
         {
           "stateId": "108e22d6-813c-4b2e-aa79-6943c543f61f",
           "typeOfStateId": "state",
-          "$connId": "con_48",
+          "$connId": "con_118",
           "$id": "0c52135f-6a0b-45f8-822b-874100b8ecbd",
           "conditions": [
             { "source": "input", "comparison": "exists", "values": [] }
@@ -1719,7 +2009,7 @@
       "id": "eeceafe6-6025-4091-b8f1-0c9575a79c11",
       "root": false,
       "$title": "Desafio",
-      "$position": { "top": "652px", "left": "649px" },
+      "$position": { "top": "652px", "left": "671.5px" },
       "$invalidContentActions": false,
       "$invalidOutputs": false,
       "$invalidCustomActions": false,

@@ -27,4 +27,4 @@ Exemplo: curl http://localhost:3000/github
 
 ## Documentação Blip
 
-> Arquivo danielteste4.json
+> Arquivo ./Flow/danielteste4.json
