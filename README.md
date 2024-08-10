@@ -4,7 +4,7 @@
 
 # Projeto IA Blip
 
-<img align="center" src="../blip-test/src/assets/image/blip-drw.png"/>
+![GETALL](./src/assets/image/blip-drw.png)
 
 ## Desenvolvimento
 
